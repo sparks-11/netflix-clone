@@ -1,0 +1,100 @@
+.loginscreen {
+  position: relative;
+  height: 100%;
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.hipwallpaper.com%2Fi%2F98%2F21%2FdUyCkp.jpg&f=1&nofb=1")
+    center no-repeat;
+  background-size: cover;
+}
+.loginscreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginscreen__logo {
+  position: fixed;
+  cursor: pointer;
+  left: 0;
+  top: -10px;
+  width: 100px;
+  padding-left: 20px;
+  object-fit: contain;
+}
+.loginscreen__btn {
+  position: fixed;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  background: #e50914;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  transition: all 250ms;
+}
+.loginscreen__btn:hover {
+  color: #e50914;
+  background: white;
+}
+.loginscreen__body {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-items: center;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+}
+.loginscreen__content > h1 {
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.loginscreen__content > h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.loginscreen__content > h3 {
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.loginscreen__input > form > input {
+  width: 30%;
+  height: 20px;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  outline-width: 0;
+  border: none;
+  color: black;
+}
+.loginscreen__btn--submit {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 11px 20px;
+  color: white;
+  background: #e50914;
+  font-weight: 600;
+  transition: all 250ms ease-in-out;
+}
+/* .loginscreen__btn--submit:hover {
+  text-decoration: underline;
+} */
